@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adaptive Pomodoro Watch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Adaptive Pomodoro Watch</h1>
+    <p>Track focus sessions and find your optimal work–break cycle</p>
+
+    <div class="timer" id="timer">25:00</div>
+
+    <div class="buttons">
+      <button onclick="startSession()">Start Work</button>
+      <button onclick="pauseSession()">Pause</button>
+      <button onclick="endSession()">End Session</button>
+      <button onclick="reset()">Reset</button>
+    </div>
+
+    <div class="stats">
+      <p>Session Focus Score: <span id="focusScore">0</span></p>
+      <p>Optimal Work Time: <span id="optimalTime">25</span> minutes</p>
+      <p>Breaks Taken: <span id="breaks">0</span></p>
+    </div>
+  </div>
+
+<script src="app.ts"></script>
+</body>
+</html>
